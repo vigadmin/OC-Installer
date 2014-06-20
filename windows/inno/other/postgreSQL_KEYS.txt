@@ -1,0 +1,67 @@
+PostgreSQL 8.4
+Usage:
+
+ --help                         Display the list of valid options
+
+ --version                      Display product information
+
+ --optionfile <optionfile>      Installation option file
+                                Default: 
+
+ --unattendedmodeui <unattendedmodeui> Unattended Mode UI
+                                Default: none
+                                Allowed: none minimal minimalWithDialogs
+
+ --debuglevel <debuglevel>      Debug information level of verbosity
+                                Default: 2
+                                Allowed: 0 1 2 3 4
+
+ --mode <mode>                  Installation mode
+                                Default: qt
+                                Allowed: qt win32 unattended
+
+ --debugtrace <debugtrace>      Debug filename
+                                Default: 
+
+ --installer-language <installer-language> Language selection
+                                Default: 
+                                Allowed: en es fr
+
+ --extract-only <extract-only>  
+                                Default: 0
+
+ --superaccount <superaccount>  Sets the user name of the database superuser. Defaults to 'postgres'.
+                                Default: postgres
+
+ --servicename <servicename>    servicename.description
+                                Default: postgresql-8.4
+
+ --serviceaccount <serviceaccount> Sets the operating system user account that owns the server process. Defaults to 'postgres'.
+                                Default: postgres
+
+ --servicepassword <servicepassword> Sets the password for the operating system user account that owns server process. Defaults to superuser password.
+                                Default: 
+
+ --install_runtimes <install_runtimes> Specifies whether or not install the Microsoft Visual C++ runtimes before the installation proceeds.
+                                Default: 1
+
+ --create_shortcuts <create_shortcuts> Specifies whether or not menu shortcuts should be created.
+                                Default: 1
+
+ --prefix <prefix>              Installation Directory
+                                Default: C:\Program Files (x86)\PostgreSQL\8.4
+
+ --datadir <datadir>            Data Directory
+                                Default: C:\Program Files (x86)\PostgreSQL\8.4\data
+
+ --superpassword <superpassword> Password
+                                Default: 
+
+ --serverport <serverport>      Port
+                                Default: 5432
+
+ --locale <locale>              Locale
+                                Default: 
+
+ --install_plpgsql <install_plpgsql> Install pl/pgsql in template1 database?
+                                Default: 1

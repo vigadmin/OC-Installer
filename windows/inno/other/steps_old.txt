@@ -1,0 +1,13 @@
+jdk-6u24-windows-i586.exe /s INSTALLDIR=c:\OC\jdk1.6.0_24
+	or 
+jdk-6u24-windows-x64.exe /s INSTALLDIR=c:\OC\jdk1.6.0_24
+
+optional ( PATH=PATH+%SYSTEMDRIVE%\OC\jdk1.6.0_24)
+
+postgresql-8.4.7-2-windows.exe --mode unattended --install_plpgsql 0
+
+apache-tomcat-6.0.32.exe /S /D=%SYSTEMDRIVE%\OC\tomcat
+
+mkdir c:\oc\tomcat\oldwebapps
+mv c:\oc\tomcat\webapps c:\oc\tomcat\oldwebapps
+
